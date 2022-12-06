@@ -1,10 +1,8 @@
-/** @format */
-
-import React, { Component } from "react";
-import style from "../style/Cards.module.css";
-import aliveImg from "../img/alive.png";
-import deadImg from "../img/dead.png";
-import desconocido from "../img/desconocido.png";
+import React, { Component } from 'react';
+import style from './style/Cards.module.css';
+import aliveImg from './img/alive.png';
+import deadImg from './img/dead.png';
+import desconocido from './img/desconocido.png';
 
 class Cards extends Component {
   constructor(props) {
@@ -47,13 +45,15 @@ class Cards extends Component {
         <div className={`btn-group ${style.div__button}`}>
           <button
             onClick={(event) => this.restarHandler(event)}
-            className={`btn ${style.button}`}>
+            className={`btn ${style.button}`}
+          >
             «
           </button>
           <button className={`btn ${style.button}`}>{this.state.count}</button>
           <button
             onClick={(event) => this.reqApi(event)}
-            className={`btn ${style.button}`}>
+            className={`btn ${style.button}`}
+          >
             »
           </button>
         </div>
@@ -68,7 +68,7 @@ class Cards extends Component {
                 />
               </div>
               <div className={style.div__info}>
-                {element.status === "Alive" ? (
+                {element.status === 'Alive' ? (
                   <div className={style.div__img}>
                     <img
                       src={aliveImg}
@@ -76,11 +76,11 @@ class Cards extends Component {
                       className={style.imgAliveOrDead}
                     />
                     <p className={style.pAlive}>
-                      {" "}
+                      {' '}
                       {element.status} - {element.species}
                     </p>
                   </div>
-                ) : element.status === "Dead" ? (
+                ) : element.status === 'Dead' ? (
                   <div className={style.div__img}>
                     <img
                       src={deadImg}
@@ -88,7 +88,7 @@ class Cards extends Component {
                       className={style.imgAliveOrDead}
                     />
                     <p className={style.pDead}>
-                      {" "}
+                      {' '}
                       {element.status} - {element.species}
                     </p>
                   </div>
@@ -100,7 +100,7 @@ class Cards extends Component {
                       className={style.imgAliveOrDead}
                     />
                     <p className={style.pDeconocido}>
-                      {" "}
+                      {' '}
                       {element.status} - {element.species}
                     </p>
                   </div>

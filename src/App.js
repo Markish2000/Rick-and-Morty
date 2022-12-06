@@ -1,11 +1,11 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from './components/footer/Footer';
+import HeaderContainer from './components/header/HeaderContainer';
 import RickYMortyCointainer from './components/RickYMortyCointainer';
 
 function App() {
   return (
     <>
-      <Header />
+      <HeaderContainer />
       <RickYMortyCointainer />
       <Footer />
     </>

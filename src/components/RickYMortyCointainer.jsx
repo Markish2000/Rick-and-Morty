@@ -1,15 +1,17 @@
-import Banner from "./Banner"
-import Cards from "./Cards"
-import style from "../style/RickYMortyCointainer.module.css"
+import Cards from './cards/Cards';
+import style from '../style/RickYMortyCointainer.module.css';
+import BannerRickAndMorty from './BannerRickAndMorty';
+import FormContainer from './form/FormContainer';
 
 const RickYMortyCointainer = () => {
   return (
     <div className={style.div__container}>
       <div className={style.div__container_bc}>
-        <Banner />
+        <BannerRickAndMorty />
+        <FormContainer />
         <Cards />
       </div>
     </div>
-  )
-}
-export default RickYMortyCointainer
+  );
+};
+export default RickYMortyCointainer;
