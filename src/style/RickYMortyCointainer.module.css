@@ -1,0 +1,10 @@
+.div__container{
+    background-image: url("../img/backgroundrick.jpg");
+    background-position: center top;
+    background-size: contain;
+}
+
+.div__container_bc {
+    background-color: #2c2a309f;
+    width: 100%;
+}

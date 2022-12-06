@@ -1,0 +1,88 @@
+/** @format */
+
+.div__button {
+  padding: 1em 0 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgb(33, 36, 33);
+  height: 5em;
+  width: 5em;
+}
+
+.containerAllCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.containerCards {
+  color: #ffffff;
+  background-color: #000000da;
+  width: 50em;
+  margin-top: 2em;
+  padding: 2em 0 2em 0;
+  border-radius: 20px;
+  display: flex;
+}
+
+.div__info {
+  width: 100%; /* Evalular */
+  margin-left: 3em;
+}
+
+.div__img {
+  padding-right: 2em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cards__img {
+  padding-left: 2em;
+  border-radius: 40%;
+}
+
+.div_name_genero {
+  display: flex;
+  align-items: center;
+}
+
+.h2Cards {
+  font-size: 2em;
+  padding-right: 1rem;
+}
+
+.nose {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgAliveOrDead {
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
+}
+
+.pAlive {
+  color: #00ff00;
+}
+
+.pDead {
+  color: #ff0000;
+}
+
+.pDeconocido {
+  color: #ffa500;
+}
+
+.h3__pd {
+  padding-bottom: 3px;
+}
+
+.p__pd {
+  padding-bottom: 1em;
+}
