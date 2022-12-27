@@ -4,10 +4,10 @@ import HeaderGif from './HeaderGif';
 
 const HeaderContainer = () => {
   return (
-    <div className={style.div}>
+    <header className={style.div}>
       <HeaderImg />
       <HeaderGif />
-    </div>
+    </header>
   );
 };
 export default HeaderContainer;

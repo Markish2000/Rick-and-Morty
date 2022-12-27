@@ -73,7 +73,7 @@ const FormContainer = () => {
 
   return (
     <form onSubmit={submitHandler}>
-      <h4 className={style.form__h4}>Register to enter</h4>
+      <h4 className={style.form__h4}>Complete to enter</h4>
       <input
         onChange={nameChangeHandler}
         className={
@@ -85,6 +85,8 @@ const FormContainer = () => {
         }
         type='text'
         placeholder='Enter your name'
+        name='name'
+        value={form.name}
       />
       <input
         onChange={lastNameChangeHandler}
@@ -97,6 +99,8 @@ const FormContainer = () => {
         }
         type='text'
         placeholder='Enter your last name'
+        name='last name'
+        value={form.lastName}
       />
       <input
         onChange={emailChangeHandler}
@@ -109,6 +113,8 @@ const FormContainer = () => {
         }
         type='email'
         placeholder='Enter your e-mail'
+        name='email'
+        value={form.email}
       />
       <input
         onChange={passwordChangeHandler}
@@ -121,6 +127,8 @@ const FormContainer = () => {
         }
         type='password'
         placeholder='Enter your password'
+        name='password'
+        value={form.password}
       />
       <div className='flex'>
         <input
@@ -143,7 +151,7 @@ const FormContainer = () => {
             error.checkBox !== null
           }
         >
-          SEND
+          START HYPERSPACE JUMP
         </button>
       </Link>
     </form>
